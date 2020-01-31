@@ -6,6 +6,6 @@ def oxford_comma(array)
     elsif array.length == 3
     return array[0..-2].join(", ") + ", and " + array[-1]
     else array.count{|arr| arr.size > 3}
-    return array[0..-1].join(", ") + ", and "
+    return array[0].join(", ") + ", and " + array[-1]
   end
 end
